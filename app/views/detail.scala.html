@@ -1,0 +1,71 @@
+@(company: Company)
+
+@template.main(Messages("application.title")) {
+	<div id="detailPanel" class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title">@Messages("detail.title")</h3>
+		</div>
+		<div class="panel-body">
+			<form role="form" class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-2 control-label">@Messages("name")</label>
+					<div class="col-sm-10">
+						<p class="form-control-static">@company.name</p>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">@Messages("description")</label>
+					<div class="col-sm-10">
+						<p class="form-control-static">@company.description</p>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">@Messages("webSite")</label>
+					<div class="col-sm-10">
+						<p class="form-control-static"><a href="@company.contactInformation.webSite">@company.contactInformation.webSite</a></p>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">@Messages("address")</label>
+					<div class="col-sm-10">
+						<p class="form-control-static">@company.contactInformation.address</p>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">@Messages("emails")</label>
+					<div class="col-sm-10">
+						<p class="form-control-static">@company.contactInformation.emails.map {(value) => @Html(value.mkString(", "))}</p>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">@Messages("phoneNumbers")</label>
+					<div class="col-sm-10">
+						<p class="form-control-static">@company.contactInformation.phoneNumbers.map {case (value) => @Html(value.mkString(", "))}</p>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-sm-2 control-label">@Messages("tags")</label>
+					<div class="col-sm-10">
+						<p class="form-control-static">@company.tags.map {case (value) => @Html(value.mkString(", "))}</p>
+					</div>
+				</div>
+			</form>
+		
+			<div class="col-sm-offset-2 col-sm-10">
+				<a id="btnBackToList" href="@routes.CompanyController.list" class="btn btn-success" title="@Messages("button.back")">
+					<span class="glyphicon glyphicon-ok"></span>
+					@Messages("button.back")
+				</a>
+			</div>
+		</div>
+	</div>
+}{
+
+}
+

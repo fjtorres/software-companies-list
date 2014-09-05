@@ -1,0 +1,39 @@
+application.title = Empresas desarrolladoras de Software de Cádiz
+application.header = Listado de empresas.
+application.subheader = Empresas desarrolladoras de Software de la provincia de Cádiz.
+application.footer = Pequeño proyecto personal de Francisco Javier Torres (<a href="https://twitter.com/kisco_">@_kisco</a>) utilizando <a href="http://www.webjars.org/">Webjars</a>, <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://www.playframework.com/">Playframework</a>, <a href="http://www.scala-lang.org/">Scala</a> y <a href="http://reactivemongo.org/">ReactiveMongo</a>.
+
+# Buttons
+button.back = Volver
+button.cancel = Cancelar
+button.detail = Detalle
+button.search = Buscar
+button.suggest = Sugerir
+
+# Company fields
+name=Nombre
+description=Descripción
+tags  = Tags
+tags.help = Añade los tags separados por coma.
+address = Dirección
+phoneNumbers = Números de teléfono
+phoneNumbers.help = Añade los números de teléfono separados por coma.
+emails = Emails
+emails.help = Añade los email separados por coma.
+webSite = Sitio web
+
+# Detail view
+detail.title = Información detallada sobre la empresa
+
+# Suggestion form
+suggest.title = Sugiere más
+suggest.text = ¿Conoces alguna empresa que no este en el listado? Sugierela desde el formulario.
+suggest.show = Mostrar formulario de sugerencias
+
+# Search form
+search.title = Formulario de búsqueda
+search.filter = Filtro
+search.filter.placeholder = Indique filtro de búsqueda
+
+#Errors
+error.required = El campo "{0}" es requerido.

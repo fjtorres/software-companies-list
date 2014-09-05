@@ -1,0 +1,39 @@
+application.title = Software developer companies of Cádiz
+application.header = List of companies.
+application.subheader = Software developer companies from province of Cádiz.
+application.footer = A little personal project of Francisco Javier Torres (<a href="https://twitter.com/kisco_">@_kisco</a>) using <a href="http://www.webjars.org/">Webjars</a>, <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://www.playframework.com/">Playframework</a>, <a href="http://www.scala-lang.org/">Scala</a> and <a href="http://reactivemongo.org/">ReactiveMongo</a>.
+
+# Buttons
+button.back = Back
+button.cancel = Cancel
+button.detail = Detail
+button.search = Search
+button.suggest = Suggest
+
+# Company fields
+name=Name
+description=Description
+tags  = Tags
+tags.help = Add tags separated by commas.
+address = Address
+phoneNumbers = Phone numbers
+phoneNumbers.help = Add phone number separated by commas.
+emails = Emails
+emails.help = Add email separated by commas.
+webSite = Web site
+
+# Detail view
+detail.title = Detail information about company
+
+# Suggestion form
+suggest.title = Suggest more
+suggest.text =
+suggest.show = Show suggestion form
+
+# Search form
+search.title = Search form
+search.filter = Filter
+search.filter.placeholder = Enter search filter
+
+#Errors
+error.required = The field "{0}" is required.
